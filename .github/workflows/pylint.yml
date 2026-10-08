@@ -1,0 +1,52 @@
+# Challenge: run the coding standards tool (Pylint) on every pull
+# request to the main branch. The job fails if Pylint reports any issue
+# or if a unit test fails, and the HTML report is always uploaded.
+name: Coding standards (Pylint)
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pylint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install the tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Run Pylint
+        run: pylint $(git ls-files '*.py')
+
+      - name: Generate the HTML report
+        if: always()
+        run: |
+          pylint --load-plugins=pylint_json2html \
+                 --output-format=jsonextended \
+                 --output=pylint-report.json \
+                 $(git ls-files '*.py') || true
+          pylint-json2html -f jsonextended \
+                           -o pylint-report.html pylint-report.json
+
+      - name: Upload the HTML report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: pylint-report
+          path: pylint-report.html
+
+      - name: Run the unit tests
+        run: python -m unittest -v
