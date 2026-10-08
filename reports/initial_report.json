@@ -1,0 +1,394 @@
+{
+    "messages": [
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "",
+            "line": 1,
+            "column": 0,
+            "path": "test.py",
+            "symbol": "missing-module-docstring",
+            "message": "Missing module docstring",
+            "message-id": "C0114"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student",
+            "line": 1,
+            "column": 0,
+            "path": "test.py",
+            "symbol": "missing-class-docstring",
+            "message": "Missing class docstring",
+            "message-id": "C0115"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student",
+            "line": 1,
+            "column": 0,
+            "path": "test.py",
+            "symbol": "invalid-name",
+            "message": "Class name \"student\" doesn't conform to PascalCase naming style",
+            "message-id": "C0103"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.__init__",
+            "line": 6,
+            "column": 8,
+            "path": "test.py",
+            "symbol": "invalid-name",
+            "message": "Attribute name \"isPassed\" doesn't conform to snake_case naming style",
+            "message-id": "C0103"
+        },
+        {
+            "type": "error",
+            "module": "test",
+            "obj": "student.__init__",
+            "line": 2,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "no-self-argument",
+            "message": "Method '__init__' should have \"self\" as first argument",
+            "message-id": "E0213"
+        },
+        {
+            "type": "warning",
+            "module": "test",
+            "obj": "student.__init__",
+            "line": 2,
+            "column": 20,
+            "path": "test.py",
+            "symbol": "redefined-builtin",
+            "message": "Redefining built-in 'id'",
+            "message-id": "W0622"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.addGrades",
+            "line": 9,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "missing-function-docstring",
+            "message": "Missing function or method docstring",
+            "message-id": "C0116"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.addGrades",
+            "line": 9,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "invalid-name",
+            "message": "Method name \"addGrades\" doesn't conform to snake_case naming style",
+            "message-id": "C0103"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.calcaverage",
+            "line": 12,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "missing-function-docstring",
+            "message": "Missing function or method docstring",
+            "message-id": "C0116"
+        },
+        {
+            "type": "warning",
+            "module": "test",
+            "obj": "student.calcaverage",
+            "line": 16,
+            "column": 8,
+            "path": "test.py",
+            "symbol": "unused-variable",
+            "message": "Unused variable 'avg'",
+            "message-id": "W0612"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.checkHonor",
+            "line": 18,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "missing-function-docstring",
+            "message": "Missing function or method docstring",
+            "message-id": "C0116"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.checkHonor",
+            "line": 18,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "invalid-name",
+            "message": "Method name \"checkHonor\" doesn't conform to snake_case naming style",
+            "message-id": "C0103"
+        },
+        {
+            "type": "error",
+            "module": "test",
+            "obj": "student.checkHonor",
+            "line": 19,
+            "column": 11,
+            "path": "test.py",
+            "symbol": "no-member",
+            "message": "Instance of 'student' has no 'calcAverage' member; maybe 'calcaverage'?",
+            "message-id": "E1101"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.deleteGrade",
+            "line": 22,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "missing-function-docstring",
+            "message": "Missing function or method docstring",
+            "message-id": "C0116"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.deleteGrade",
+            "line": 22,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "invalid-name",
+            "message": "Method name \"deleteGrade\" doesn't conform to snake_case naming style",
+            "message-id": "C0103"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "student.report",
+            "line": 25,
+            "column": 4,
+            "path": "test.py",
+            "symbol": "missing-function-docstring",
+            "message": "Missing function or method docstring",
+            "message-id": "C0116"
+        },
+        {
+            "type": "error",
+            "module": "test",
+            "obj": "student.report",
+            "line": 29,
+            "column": 33,
+            "path": "test.py",
+            "symbol": "no-member",
+            "message": "Instance of 'student' has no 'letter' member",
+            "message-id": "E1101"
+        },
+        {
+            "type": "convention",
+            "module": "test",
+            "obj": "startrun",
+            "line": 32,
+            "column": 0,
+            "path": "test.py",
+            "symbol": "missing-function-docstring",
+            "message": "Missing function or method docstring",
+            "message-id": "C0116"
+        }
+    ],
+    "stats": {
+        "bad_names": {
+            "argument": 0,
+            "attr": 1,
+            "klass": 1,
+            "class_attribute": 0,
+            "class_const": 0,
+            "const": 0,
+            "inlinevar": 0,
+            "function": 0,
+            "method": 3,
+            "module": 0,
+            "variable": 0,
+            "typevar": 0,
+            "paramspec": 0,
+            "typevartuple": 0,
+            "typealias": 0
+        },
+        "by_module": {
+            "Command line": {
+                "convention": 0,
+                "error": 0,
+                "fatal": 0,
+                "info": 0,
+                "refactor": 0,
+                "statement": 0,
+                "warning": 0
+            },
+            "Command line or configuration file": {
+                "convention": 0,
+                "error": 0,
+                "fatal": 0,
+                "info": 0,
+                "refactor": 0,
+                "statement": 0,
+                "warning": 0
+            },
+            "test": {
+                "convention": 13,
+                "error": 3,
+                "fatal": 0,
+                "info": 0,
+                "refactor": 0,
+                "statement": 33,
+                "warning": 2
+            }
+        },
+        "by_msg": {
+            "missing-module-docstring": 1,
+            "missing-class-docstring": 1,
+            "invalid-name": 5,
+            "no-self-argument": 1,
+            "redefined-builtin": 1,
+            "missing-function-docstring": 6,
+            "unused-variable": 1,
+            "no-member": 2
+        },
+        "code_type_count": {
+            "code": 0,
+            "comment": 0,
+            "docstring": 0,
+            "empty": 0,
+            "total": 0
+        },
+        "modules_names": [
+            "test.py"
+        ],
+        "dependencies": {},
+        "duplicated_lines": {
+            "nb_duplicated_lines": 0,
+            "percent_duplicated_lines": 0.0
+        },
+        "node_count": {
+            "function": 1,
+            "klass": 1,
+            "method": 6,
+            "module": 1
+        },
+        "undocumented": {
+            "function": 1,
+            "klass": 1,
+            "method": 5,
+            "module": 1
+        },
+        "convention": 13,
+        "error": 3,
+        "fatal": 0,
+        "info": 0,
+        "refactor": 0,
+        "statement": 33,
+        "warning": 2,
+        "skipped": 0,
+        "global_note": 0,
+        "nb_duplicated_lines": 0,
+        "percent_duplicated_lines": 0.0
+    },
+    "previous": {
+        "bad_names": {
+            "argument": 0,
+            "attr": 1,
+            "klass": 1,
+            "class_attribute": 0,
+            "class_const": 0,
+            "const": 0,
+            "inlinevar": 0,
+            "function": 0,
+            "method": 3,
+            "module": 0,
+            "variable": 0,
+            "typevar": 0,
+            "paramspec": 0,
+            "typevartuple": 0,
+            "typealias": 0
+        },
+        "by_module": {
+            "Command line": {
+                "convention": 0,
+                "error": 0,
+                "fatal": 0,
+                "info": 0,
+                "refactor": 0,
+                "statement": 0,
+                "warning": 0
+            },
+            "Command line or configuration file": {
+                "convention": 0,
+                "error": 0,
+                "fatal": 0,
+                "info": 0,
+                "refactor": 0,
+                "statement": 0,
+                "warning": 0
+            },
+            "test": {
+                "convention": 13,
+                "error": 3,
+                "fatal": 0,
+                "info": 0,
+                "refactor": 0,
+                "statement": 33,
+                "warning": 2
+            }
+        },
+        "by_msg": {
+            "missing-module-docstring": 1,
+            "missing-class-docstring": 1,
+            "invalid-name": 5,
+            "no-self-argument": 1,
+            "redefined-builtin": 1,
+            "missing-function-docstring": 6,
+            "unused-variable": 1,
+            "no-member": 2
+        },
+        "code_type_count": {
+            "code": 0,
+            "comment": 0,
+            "docstring": 0,
+            "empty": 0,
+            "total": 0
+        },
+        "modules_names": [
+            "test.py"
+        ],
+        "dependencies": {},
+        "duplicated_lines": {
+            "nb_duplicated_lines": 0,
+            "percent_duplicated_lines": 0.0
+        },
+        "node_count": {
+            "function": 1,
+            "klass": 1,
+            "method": 6,
+            "module": 1
+        },
+        "undocumented": {
+            "function": 1,
+            "klass": 1,
+            "method": 5,
+            "module": 1
+        },
+        "convention": 13,
+        "error": 3,
+        "fatal": 0,
+        "info": 0,
+        "refactor": 0,
+        "statement": 33,
+        "warning": 2,
+        "skipped": 0,
+        "global_note": 0.9090909090909101,
+        "nb_duplicated_lines": 0,
+        "percent_duplicated_lines": 0.0
+    }
+}
