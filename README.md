@@ -144,5 +144,5 @@ analizar nada más. Por eso el primer commit (`test.py`) contiene el código bas
 
 ## Autor
 
-- **Nombre:** _Jeremy Lopez_
+- **Nombre:** _Jeremy López_
 - **Repositorio:** _https://github.com/jeremylopezarteaga04-pixel/Workshop-Coding-Standards_
