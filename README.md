@@ -144,5 +144,5 @@ analizar nada más. Por eso el primer commit (`test.py`) contiene el código bas
 
 ## Autor
 
-- **Nombre:** _tu nombre aquí_
-- **Repositorio:** _URL del repositorio_
+- **Nombre:** _Jeremy Lopez_
+- **Repositorio:** _https://github.com/jeremylopezarteaga04-pixel/Workshop-Coding-Standards_
